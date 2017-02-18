@@ -1,0 +1,81 @@
+@import "socialcolors";
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+@import "shadecolor";
+@import "palette";
+
+header {
+	padding: 40px 0;
+	text-align: center;
+	width: 100%;
+
+	h1 {
+		font-family: 'Roboto', Arial, Helvetica, sans-serif;
+		font-size: 40px;
+	}
+
+	ul {
+		height: 200px;
+		vertical-align: middle;
+		padding: 0;
+		li {
+			display: inline-block;
+			margin: 0 10px;
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			transition: all 0.5s ease-in-out;
+			font-size: 60px;
+
+			&:hover {
+				transform: scale(1.3);
+			}
+
+			&:first-child {
+				background-color: $facebook_color;
+				&:hover {
+					background-color: darken( $facebook_color, 10%)
+				}
+			}
+
+			&:nth-child(2) {
+				background-color: $twitter_color;
+				&:hover {
+					background-color: darken($twitter_color, 10%);
+				}
+			}
+
+			&:nth-child(3) {
+				background-color: $linkedin_color;
+				&:hover {
+					background-color: darken($linkedin_color, 10%);
+				}
+			}
+
+			&:nth-child(4) {
+				background-color: $google_plus_color;
+				&:hover {
+					background-color: darken($google_plus_color, 10%);
+				}
+			}
+
+			&:nth-child(5) {
+				background-color: $pinterest_color;
+				&:hover {
+					background-color: darken( $pinterest_color, 10%)
+				}
+			}
+
+			span {
+				color: white;
+				display: block;
+				line-height: 120px;
+			}
+		}
+	}
+}
+
+section {
+	height: 500px;
+	width: 100%;
+	display: inline-block;
+}
